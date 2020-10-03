@@ -393,11 +393,7 @@ Ubuntu/Debian
 Note: As of Ubuntu 20.04, Python 2 has been removed and Python 3 is the default. You can use the pyenv method to install Python 2 on Ubuntu 20.04 and up, but if that does not work you can follow this `guide <https://www.vultr.com/docs/how-to-install-python-2-on-ubuntu-20-04>`_.
 
 Recommend approach uses `pyenv <https://github.com/yyuu/pyenv>`__. If
-you don't use pyenv, you need to install the ``python-dev`` package
-too. If you are installing on the Raspberry Pi (gen 1), use the
-`eabi-armv6hf
-version <https://mopidy.github.io/libspotify-archive/libspotify-12.1.103-Linux-armv6-bcm2708hardfp-release.tar.gz>`__
-of libspotify.
+you don't use pyenv, you need to install the ``python-dev`` package also.
 
 To install spotify-ripper on Raspberry Pi 4, you need to be running Ubuntu 18.04.5 or 20.04.1 and you should choose "Raspberry Pi 3 (Hard-Float) preinstalled server image" if it is 18.04.5 or "Raspberry Pi Generic (Hard-Float) preinstalled server image" if it is 20.04.1 because the ARM64 version will not work at all.
 
@@ -414,6 +410,8 @@ Here are links to the actual distros you can use:
     sudo make install prefix=/usr/local
     git clone https://github.com/richardk80/spotify-ripper.git && cd spotify-ripper && sudo python setup.py install
     pyenv rehash
+    
+These instructions should work for any other types of Raspberry Pi's that will run either of these versions of Ubuntu.
 
 To install pyenv using `pyenv-installer <https://github.com/yyuu/pyenv-installer>`__ (requires git and curl):
 
