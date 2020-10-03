@@ -409,7 +409,6 @@ Here are links to the actual distros you can use:
     cd libspotify-12.1.103-Linux-armv6-bcm2708hardfp-release/
     sudo make install prefix=/usr/local
     git clone https://github.com/richardk80/spotify-ripper.git && cd spotify-ripper && sudo python setup.py install
-    pyenv rehash
     
 These instructions should work for any other types of Raspberry Pi's that will run either of these versions of Ubuntu.
 
