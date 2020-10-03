@@ -516,16 +516,16 @@ In addition to MP3 encoding, ``spotify-ripper`` supports encoding to FLAC, AAC, 
 .. code:: bash
 
     # FLAC
-    sudo apt-get install flac
+    sudo apt install flac
 
     # ALAC
-    sudo apt-get install libav-tools
+    sudo apt install libav-tools
 
     # AAC
-    sudo apt-get install faac
+    sudo apt install faac
 
     # MP4/M4A (need to compile fdkaac from source)
-    sudo apt-get install libfdk-aac-dev automake autoconf
+    sudo apt install libfdk-aac-dev automake autoconf
     git clone https://github.com/nu774/fdkaac.git
     cd fdkaac
     autoreconf -i
@@ -533,11 +533,25 @@ In addition to MP3 encoding, ``spotify-ripper`` supports encoding to FLAC, AAC, 
     sudo make install
 
     # Ogg Vorbis
-    sudo apt-get install vorbis-tools
+    sudo apt install vorbis-tools
 
     # Opus
-    sudo apt-get install opus-tools
-
+    sudo apt install opus-tools
+    
+    **Note: If installing onto RetroPie, libav-tools and faac are not available through the official raspbian sources. These will have to be installed manually**
+    To install libav-tools manually, follow these steps:
+    sudo apt install ffmpeg
+    wget http://security.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/libav-tools_2.8.17-0ubuntu0.1_all.deb
+    sudo dpkg -i libav-tools_2.8.17-0ubuntu0.1_all.deb
+    
+    To install faac manually, follow these steps:
+    wget http://ports.ubuntu.com/pool/multiverse/f/faac/libfaac0_1.28+cvs20151130-1_armhf.deb
+    sudo dpkg -i libfaac0_1.28+cvs20151130-1_armhf.deb
+    wget http://ports.ubuntu.com/pool/multiverse/f/faac/faac_1.28+cvs20151130-1_armhf.deb
+    sudo dpkg -i faac_1.28+cvs20151130-1_armhf.deb
+    
+    **Note: If at any time there is an error about broken packages, just issue this command: sudo apt install --fix-broken**
+    
 
 Upgrade
 ~~~~~~~
