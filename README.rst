@@ -399,7 +399,7 @@ too. If you are installing on the Raspberry Pi (gen 1), use the
 version <https://mopidy.github.io/libspotify-archive/libspotify-12.1.103-Linux-armv6-bcm2708hardfp-release.tar.gz>`__
 of libspotify.
 
-To install spotify-ripper on Raspberry Pi 4, you need to be running Ubuntu 18.04.5 or 20.04.1 and you should choose "Raspberry Pi Generic (Hard-Float) preinstalled server image" because the ARM64 version will not work at all.
+To install spotify-ripper on Raspberry Pi 4, you need to be running Ubuntu 18.04.5 or 20.04.1 and you should choose "Raspberry Pi 3 (Hard-Float) preinstalled server image" if it is 18.04.5 or "Raspberry Pi Generic (Hard-Float) preinstalled server image" if it is 20.04.1 because the ARM64 version will not work at all.
 
 Here are links to the actual distros you can use:
 `18.04.5 <https://cdimage.ubuntu.com/releases/18.04.5/release/ubuntu-18.04.5-preinstalled-server-armhf+raspi3.img.xz>`__ or
