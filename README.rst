@@ -410,7 +410,22 @@ Here are links to the actual distros you can use:
     sudo make install prefix=/usr/local
     git clone https://github.com/richardk80/spotify-ripper.git && cd spotify-ripper && sudo python setup.py install
     
-These instructions should work for any other types of Raspberry Pi's that will run either of these versions of Ubuntu.
+The instructions above should work for any other types of Raspberry Pi's that will run either of these versions of Ubuntu.
+
+Spotify-ripper can even be used with RetroPie by following the instructions above and then following some extra steps:
+
+After spotify-ripper is installed, only the root user will be able to use it by default, but it can be fixed to be used by the pi user as well and this is how:
+
+.. code:: bash
+
+    sudo su
+    cp -r /root/.spotify-ripper /home/pi/
+    chmod -R 777 /home/pi/.spotify-ripper
+    exit
+    
+Now you will need to add the config.ini and spotify_appkey.key files to the .spotify-ripper folder just like you normally would and then edit the config.ini file to fit your needs.
+
+**Note** This has only been tested with a Raspberry Pi 4, so as with any other version of Raspberry Pi, your mileage may vary
 
 To install pyenv using `pyenv-installer <https://github.com/yyuu/pyenv-installer>`__ (requires git and curl):
 
