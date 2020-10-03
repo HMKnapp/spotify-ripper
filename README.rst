@@ -512,9 +512,8 @@ In addition to MP3 encoding, ``spotify-ripper`` supports encoding to FLAC, AAC, 
 
     # MP4/M4A (need to compile fdkaac from source)
     sudo apt-get install libfdk-aac-dev automake autoconf
-    wget https://github.com/nu774/fdkaac/archive/v0.6.2.tar.gz
-    tar xvf v0.6.2.tar.gz
-    cd fdkaac-0.6.2
+    git clone https://github.com/nu774/fdkaac.git
+    cd fdkaac
     autoreconf -i
     ./configure
     sudo make install
