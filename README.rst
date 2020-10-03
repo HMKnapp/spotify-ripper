@@ -538,7 +538,7 @@ In addition to MP3 encoding, ``spotify-ripper`` supports encoding to FLAC, AAC, 
     # Opus
     sudo apt install opus-tools
     
-    # Note: If installing onto RetroPie, libav-tools and faac are not available through the official raspbian sources. These will have to be installed manually
+    # Note: If installing onto RetroPie, libav-tools, faac, and libfdk-aac-dev are not available through the official raspbian sources. These will have to be installed manually
     To install libav-tools manually, follow these steps:
     sudo apt install ffmpeg
     wget http://security.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/libav-tools_2.8.17-0ubuntu0.1_all.deb
@@ -549,6 +549,12 @@ In addition to MP3 encoding, ``spotify-ripper`` supports encoding to FLAC, AAC, 
     sudo dpkg -i libfaac0_1.28+cvs20151130-1_armhf.deb
     wget http://ports.ubuntu.com/pool/multiverse/f/faac/faac_1.28+cvs20151130-1_armhf.deb
     sudo dpkg -i faac_1.28+cvs20151130-1_armhf.deb
+    
+    To install libfdk-aac-dev manually, follow these steps:
+    wget http://ftp.us.debian.org/debian/pool/non-free/f/fdk-aac/libfdk-aac1_0.1.4-2+b1_armhf.deb
+    sudo dpkg -i libfdk-aac1_0.1.4-2+b1_armhf.deb
+    wget http://ftp.us.debian.org/debian/pool/non-free/f/fdk-aac/libfdk-aac-dev_0.1.4-2+b1_armhf.deb
+    sudo dpkg -i libfdk-aac-dev_0.1.4-2+b1_armhf.deb
     
     # Note: If at any time there is an error about broken packages, just issue this command: sudo apt install --fix-broken
     
