@@ -35,7 +35,7 @@ Features
 
 -  accepts tracks, playlists, albums, and artist URIs
 
-   **Note: Ripping playlists require putting Spotify URIs into a .txt file and using the command "spotify-ripper name_of_file.txt"**
+**Note: Ripping playlists require putting Spotify URIs into a .txt file and using the command "spotify-ripper name_of_file.txt"**
 
 -  search for tracks using Spotify queries
 
@@ -425,7 +425,7 @@ After spotify-ripper is installed, only the root user will be able to use it by 
     
 Now you will need to add the config.ini and spotify_appkey.key files to the .spotify-ripper folder just like you normally would and then edit the config.ini file to fit your needs.
 
-**Note** This has only been tested with a Raspberry Pi 4, so as with any other version of Raspberry Pi, your mileage may vary
+**Note: This has only been tested with a Raspberry Pi 4, so as with any other version of Raspberry Pi, your mileage may vary**
 
 To install pyenv using `pyenv-installer <https://github.com/yyuu/pyenv-installer>`__ (requires git and curl):
 
