@@ -369,11 +369,12 @@ To install spotify-ripper once pyenv is setup:
     Uncompress the file and copy libspotify.framework to /Library/Frameworks (optional)
     sudo cp -R ./libspotify-12.1.51-Darwin-universal/libspotify.framework /Library/Frameworks
     Create a symbolic link to /usr/local/opt/libspotify/lib/libspotify
-    mkdir -p /usr/local/opt/libspotify/lib
-    ln -s /Library/Frameworks/libspotify.framework/libspotify /usr/local/opt/libspotify/lib
+    sudo mkdir -p /usr/local/opt/libspotify/lib
+    sudo ln -s /Library/Frameworks/libspotify.framework/libspotify /usr/local/opt/libspotify/lib
     brew install lame
     Pyspotify will have to be installed using pip before you can run the command below
     First make sure pip is up to date
+    sudo easy_install pip (in case you don't have pip installed)
     pip install pip --upgrade
     pip install pyspotify
     Everything else should be installed properly using the command below
