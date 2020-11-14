@@ -1,6 +1,8 @@
 **Spotify Ripper**
 ========================
 
+I'm making this repo private because I need this to keep working, and because I don't need the RIAA up my butt. They can go fly a kite for all I care.
+
 A fork of
 `spotify-ripper <https://github.com/robbeofficial/spotifyripper>`__ that
 uses `pyspotify <https://github.com/mopidy/pyspotify>`__ v2.5
