@@ -10,6 +10,12 @@ URIs to audio files and includes ID3 tags and cover art.  By default spotify-rip
 
 **Note that stream ripping violates the libspotify's ToS**
 
+**Note: Recently Spotify changed how their desktop app works. It no longer shows a URI for albums or tracks, but instead it shows an album or track link. Spotify Ripper will still work but it takes some different steps.
+Simplest way to understand how to use Spotify Ripper is like this:
+Track: https://open.spotify.com/track/3tQ6LmYZeoJ4dwkZ3IGoSj?si=9e7b8b1d2bd1481f = spotify:track:3tQ6LmYZeoJ4dwkZ3IGoSj
+Album: https://open.spotify.com/album/3zuIMH8P0GKtV5LR6zwGLB?si=v_PvykSQTxOJXpLP3eIpEQ = spotify:album:3zuIMH8P0GKtV5LR6zwGLB
+**
+
 Libspotify’s Deprecation
 ------------------------
 **From Mopidy's documentation**
