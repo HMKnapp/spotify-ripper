@@ -14,8 +14,8 @@ URIs to audio files and includes ID3 tags and cover art.  By default spotify-rip
 
 **Simplest way to understand how to use Spotify Ripper is like this:**
 
-**Track: https://open.spotify.com/track/3tQ6LmYZeoJ4dwkZ3IGoSj?si=9e7b8b1d2bd1481f = spotify:track:3tQ6LmYZeoJ4dwkZ3IGoSj**
-**Album: https://open.spotify.com/album/3zuIMH8P0GKtV5LR6zwGLB?si=v_PvykSQTxOJXpLP3eIpEQ = spotify:album:3zuIMH8P0GKtV5LR6zwGLB**
+Track: https://open.spotify.com/track/3tQ6LmYZeoJ4dwkZ3IGoSj?si=9e7b8b1d2bd1481f = spotify:track:3tQ6LmYZeoJ4dwkZ3IGoSj
+Album: https://open.spotify.com/album/3zuIMH8P0GKtV5LR6zwGLB?si=v_PvykSQTxOJXpLP3eIpEQ = spotify:album:3zuIMH8P0GKtV5LR6zwGLB
 
 Libspotify’s Deprecation
 ------------------------
