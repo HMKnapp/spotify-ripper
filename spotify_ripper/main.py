@@ -276,7 +276,7 @@ def main(prog_args=sys.argv[1:]):
     parser.add_argument(
         '--play-token-resume', metavar="RESUME_AFTER",
         help='If the \'play token\' is lost to a different device using '
-             'the same Spotify account, the script will wait a speficied '
+             'the same Spotify account, the script will wait a specified '
              'amount of time before restarting. This argument takes the same '
              'values as --resume-after [Default=abort]')
     parser.add_argument(
