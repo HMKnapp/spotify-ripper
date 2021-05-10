@@ -452,7 +452,7 @@ def format_time(seconds, total=None, short=False):
 
         HH:MM:SS.
 
-    Otherwise, the format is exacly 6 characters long and of the form:
+    Otherwise, the format is exactly 6 characters long and of the form:
 
         1w 3d
         2d 4h
