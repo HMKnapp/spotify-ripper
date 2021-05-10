@@ -5,7 +5,7 @@
 # Install encoding
 sudo apt-get install language-pack-UTF-8
 
-# Add respository
+# Add repository
 sudo apt-add-repository multiverse
 
 # Update apt-get
