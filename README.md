@@ -12,8 +12,9 @@ Note that Spotify recently changed how their desktop app works. It no longer sho
 
 Simplest way to understand how to use Spotify Ripper is like this:
 
-Track: https://open.spotify.com/track/3tQ6LmYZeoJ4dwkZ3IGoSj?si=9e7b8b1d2bd1481f = spotify:track:3tQ6LmYZeoJ4dwkZ3IGoSj 
-Album: https://open.spotify.com/album/3zuIMH8P0GKtV5LR6zwGLB?si=v_PvykSQTxOJXpLP3eIpEQ = spotify:album:3zuIMH8P0GKtV5LR6zwGLB
+Track: ```https://open.spotify.com/track/3tQ6LmYZeoJ4dwkZ3IGoSj?si=9e7b8b1d2bd1481f``` = ```spotify:track:3tQ6LmYZeoJ4dwkZ3IGoSj```
+<br>
+Album: ```https://open.spotify.com/album/3zuIMH8P0GKtV5LR6zwGLB?si=v_PvykSQTxOJXpLP3eIpEQ``` = ```spotify:album:3zuIMH8P0GKtV5LR6zwGLB```
 
 Take either of these URIs & add them like this:
 
@@ -62,7 +63,7 @@ Libspotify has been the main way of integrating with Spotify since 2009, and is 
 * option to rip to AAC instead of MP3 (requires extra faac dependency)
 * option to rip to MP4/M4A instead of MP3 (requires compiling fdkaac)
 * option to replace output filenames
-* option to normalize output filenames to NFKD (see http://unicode.org/faq/normalization.html)
+* option to normalize output filenames to NFKD (see [Normalization](http://unicode.org/faq/normalization.html))
 
 > Note that Spotify’s highest quality setting is 320 kbps, so the benefit of ripping to a lossless format is to not double encode the audio data. It’s not possible to rip in true lossless quality.
 
