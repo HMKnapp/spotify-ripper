@@ -1,5 +1,4 @@
-Spotify Ripper
-===============
+# Spotify Ripper
 
 A fork of [spotify-ripper](https://github.com/robbeofficial/spotifyripper) that uses [pyspotify](https://github.com/mopidy/pyspotify) v2.1.3
 
@@ -15,8 +14,7 @@ Simplest way to understand how to use Spotify Ripper is like this:
 Track: https://open.spotify.com/track/3tQ6LmYZeoJ4dwkZ3IGoSj?si=9e7b8b1d2bd1481f = spotify:track:3tQ6LmYZeoJ4dwkZ3IGoSj 
 Album: https://open.spotify.com/album/3zuIMH8P0GKtV5LR6zwGLB?si=v_PvykSQTxOJXpLP3eIpEQ = spotify:album:3zuIMH8P0GKtV5LR6zwGLB
 
-Libspotify’s Deprecation
----------------
+## Libspotify’s Deprecation
 
 **From Mopidy's documentation**
 
