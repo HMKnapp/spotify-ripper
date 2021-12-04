@@ -26,8 +26,7 @@ Spotify has published newer libraries intended for Android and iOS development, 
 
 Libspotify has been the main way of integrating with Spotify since 2009, and is today a part of numerous open source projects and commercial applications, including many receivers and even cars. There’s no guarantees, but one can hope that the large deployment of libspotify means that the library will continue to work with the Spotify service for a long time into the future.
 
-Features
----------------
+## Features
 
 * real-time VBR or CBR ripping from Spotify PCM stream
 * writes ID3v2/metadata tags (including album covers)
@@ -56,8 +55,7 @@ Features
 
 > Note that Spotify’s highest quality setting is 320 kbps, so the benefit of ripping to a lossless format is to not double encode the audio data. It’s not possible to rip in true lossless quality.
 
-Usage
----------------
+## Usage
 
 ```spotify-ripper``` takes many command-line options
 
@@ -172,13 +170,11 @@ Example usage:
     search for tracks to rip: spotify-ripper -l -Q 160 -o "album:Rumours track:'the chain'"
 ```   
 
-Facebook Login
----------------
+## Facebook Login
 
 Spotify Ripper will work with your regular Facebook login/password if you setup your Spotify account to login using your Facebook credentials. Otherwise, use your Spotify login/password.
 
-Config File
----------------
+## Config File
 
 For options that you want set on every run, you can use a config file named ```config.ini``` in the settings folder (defaults to ```~/.spotify-ripper```). The options in the config file use the same name as the command line options with the exception that dashes are translated to ```snake_case```. Any option specified in the command line will overwrite any setting in the config file. Please put all options under a ```main``` section.
 
@@ -193,8 +189,7 @@ vorbis = True
 last = True
 ```
 
-Format String
----------------
+## Format String
 
 The format string dictates how ```spotify-ripper``` will organize your ripped files. This is controlled through the ```-f | --format option```. The string should include the format of the file name and optionally a directory structure. If you do not include a format string, the default format will be used: ```{album_artist}/{album}/{artist} - {track_name}.{ext}```.
 
@@ -245,8 +240,7 @@ If at a later time, the playlist is changed on Spotify (i.e. songs reordered, re
 
 If you want to redownload a playlist (for example with improved quality), you either need to remove the song files from your local or use the ```--overwrite option```.
 
-Installation
----------------
+## Installation
 
 ### Prerequisites
 
@@ -390,8 +384,7 @@ cd .spotify-ripper
 
 4. Adjust the ```config.ini``` file using the options [above](https://github.com/richardk80/spotify-ripper#usage) or just use the defaults.
 
-Optional Encoding Formats
----------------
+## Optional Encoding Formats
 
 In addition to MP3 encoding, ```spotify-ripper``` supports encoding to FLAC, AAC, MP4/M4A, Ogg Vorbis and Opus. However, additional encoding tools need to be installed for each codec you wish to use.
 
@@ -468,8 +461,7 @@ sudo dpkg -i libfdk-aac-dev_0.1.4-2+b1_armhf.deb
 
 > Note that if at any time there is an error about broken packages, just issue this command: `sudo apt install --fix-broken`.
 
-Upgrade
----------------
+## Upgrade
 
 Use ```git pull``` to upgrade to the latest version.
 
@@ -478,17 +470,14 @@ cd spotify-ripper
 git pull
 ```
 
-Common Issues and Problems
----------------
+## Common Issues and Problems
 
 Help for common problems while using spotify-ripper can be found in the [wiki](https://github.com/hbashton/spotify-ripper/wiki/Help).
 
-Release Notes
----------------
+## Release Notes
 
 Release notes can be found in the [wiki](https://github.com/hbashton/spotify-ripper/wiki/Release-Notes).
 
-License
----------------
+## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
