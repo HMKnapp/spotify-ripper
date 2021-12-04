@@ -1,4 +1,4 @@
-# Spotify Ripper
+![Spotify Ripper Logo](https://github.com/richardk80/spotify-ripper/raw/master/logo.png)
 
 A fork of [spotify-ripper](https://github.com/robbeofficial/spotifyripper) that uses [pyspotify](https://github.com/mopidy/pyspotify) v2.1.3
 
