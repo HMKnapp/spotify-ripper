@@ -45,9 +45,6 @@ Libspotify has been the main way of integrating with Spotify since 2009, and is 
 * rips files into the following directory structure: artist/album/artist - song.mp3 by default or optionally into a user-specified structure (see Format String section below)
 * option to skip or overwrite existing files
 * accepts tracks, playlists, albums, and artist URIs
-
-> Note that ripping playlists require putting Spotify URIs into a .txt file and using the command "spotify-ripper name_of_file.txt"
-
 * search for tracks using Spotify queries
 * options for interactive login (no password in shell history) and to relogin using previous credentials
 * option to remove tracks from playlist after successful ripping
@@ -65,7 +62,9 @@ Libspotify has been the main way of integrating with Spotify since 2009, and is 
 * option to replace output filenames
 * option to normalize output filenames to NFKD (see [Normalization](http://unicode.org/faq/normalization.html))
 
-> Note that Spotify’s highest quality setting is 320 kbps, so the benefit of ripping to a lossless format is to not double encode the audio data. It’s not possible to rip in true lossless quality.
+> Note that ripping playlists require putting Spotify URIs into a `.txt` file and using the command `spotify-ripper name_of_file.txt`.
+
+> Also note that Spotify’s highest quality setting is 320 kbps, so the benefit of ripping to a lossless format is to not double encode the audio data. It’s not possible to rip in true lossless quality.
 
 ## Usage
 
