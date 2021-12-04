@@ -8,9 +8,9 @@ By default spotify-ripper will encode to MP3 files, but includes the ability to 
 
 Note that stream ripping violates the libspotify's ToS
 
-Note that Spotify recently changed how their desktop app works. It no longer shows a URI for albums or tracks, but instead it shows an album / track url link. Spotify Ripper will still work but it takes some different steps.
+Note that Spotify recently changed how their desktop app works. It no longer shows a URI for albums or tracks, but instead it shows album / track url links. Spotify Ripper will still work but it takes some different steps.
 
-How to convert album / track url link to URI:
+How to convert album / track url links to URI:
 
 Track: ```https://open.spotify.com/track/3tQ6LmYZeoJ4dwkZ3IGoSj?si=9e7b8b1d2bd1481f``` = ```spotify:track:3tQ6LmYZeoJ4dwkZ3IGoSj```
 <br>
