@@ -1,4 +1,4 @@
-![Spotify Ripper Logo](https://github.com/richardk80/spotify-ripper/raw/master/logo.png)
+<img src="https://github.com/richardk80/spotify-ripper/raw/master/logo-2.png" alt="Spotify Ripper Logo" />
 
 A fork of [spotify-ripper](https://github.com/robbeofficial/spotifyripper) that uses [pyspotify](https://github.com/mopidy/pyspotify) v2.1.3
 
