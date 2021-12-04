@@ -8,9 +8,9 @@ uses `pyspotify <https://github.com/mopidy/pyspotify>`__ v2.5
 Spotify-ripper is a small ripper script for Spotify that rips Spotify
 URIs to audio files and includes ID3 tags and cover art.  By default spotify-ripper will encode to MP3 files, but includes the ability to rip to WAV, FLAC, Ogg Vorbis, Opus, AAC, and MP4/M4A.
 
-**Note that stream ripping violates the libspotify's ToS**
+Note that stream ripping violates the libspotify's ToS
 
-**Note: Recently Spotify changed how their desktop app works. It no longer shows a URI for albums or tracks, but instead it shows an album or track link. Spotify Ripper will still work but it takes some different steps.**
+Note that Spotify recently changed how their desktop app works. It no longer shows a URI for albums or tracks, but instead it shows an album or track link. Spotify Ripper will still work but it takes some different steps.
 
 Simplest way to understand how to use Spotify Ripper is like this:
 
@@ -42,7 +42,7 @@ Features
 
 -  accepts tracks, playlists, albums, and artist URIs
 
-**Note: Ripping playlists require putting Spotify URIs into a .txt file and using the command "spotify-ripper name_of_file.txt"**
+Note that ripping playlists require putting Spotify URIs into a .txt file and using the command "spotify-ripper name_of_file.txt"
 
 -  search for tracks using Spotify queries
 
@@ -77,7 +77,7 @@ Features
 
 -  option to normalize output filenames to NFKD (see http://unicode.org/faq/normalization.html)
 
-**Please note: Spotify’s highest quality setting is 320 kbps, so the benefit of ripping to a lossless format is to not double encode the audio data. It’s not possible to rip in true lossless quality.**
+Note that Spotify’s highest quality setting is 320 kbps, so the benefit of ripping to a lossless format is to not double encode the audio data. It’s not possible to rip in true lossless quality.
 
 
 Usage
@@ -350,7 +350,7 @@ Prerequisites
 Mac OS X
 ~~~~~~~~
 
-**Note: Spotify-Ripper works with macOS 11 Big Sur**
+Note that Spotify-Ripper works with macOS 11 Big Sur
 
 Recommend approach uses `homebrew <http://brew.sh/>`__ and
 `pyenv <https://github.com/yyuu/pyenv>`__
@@ -388,7 +388,7 @@ To install spotify-ripper once pyenv is setup:
     git clone https://github.com/richardk80/spotify-ripper.git && cd spotify-ripper && sudo python setup.py install
     pyenv rehash
 
-**Note that Spotify may no longer be issuing developer keys.** See `Libspotify’s Deprecation`_
+Note that Spotify may no longer be issuing developer keys. See `Libspotify’s Deprecation`_
 
 Take the application key file ``spotify_appkey.key`` from
 this repo (requires a Spotify
@@ -433,7 +433,7 @@ After spotify-ripper is installed, only the root user will be able to use it by 
     
 Now you will need to add the config.ini and spotify_appkey.key files to the .spotify-ripper folder just like you normally would and then edit the config.ini file to fit your needs.
 
-**Note: This has only been tested with a Raspberry Pi 4, so as with any other version of Raspberry Pi, your mileage may vary**
+Note that this has only been tested with a Raspberry Pi 4, so as with any other version of Raspberry Pi, your mileage may vary
 
 To install pyenv using `pyenv-installer <https://github.com/yyuu/pyenv-installer>`__ (requires git and curl):
 
@@ -457,7 +457,7 @@ To install spotify-ripper once pyenv is setup:
     git clone https://github.com/richardk80/spotify-ripper.git && cd spotify-ripper && sudo python setup.py install
     pyenv rehash
 
-**Note that Spotify may no longer be issuing developer keys.** See `Libspotify’s Deprecation`_
+Note that Spotify may no longer be issuing developer keys. See `Libspotify’s Deprecation`_
 
 Take the application key file ``spotify_appkey.key`` from
 this repo (requires a Spotify
@@ -549,7 +549,7 @@ In addition to MP3 encoding, ``spotify-ripper`` supports encoding to FLAC, AAC, 
     # Opus
     sudo apt install opus-tools
     
-    Note: If installing onto RetroPie, libav-tools, faac, and libfdk-aac-dev are not available through the official raspbian sources. These will have to be installed manually.
+    Note that if installing onto RetroPie, libav-tools, faac, and libfdk-aac-dev are not available through the official raspbian sources. These will have to be installed manually.
     
     To install libav-tools manually, follow these steps:
     sudo apt install ffmpeg
@@ -568,7 +568,7 @@ In addition to MP3 encoding, ``spotify-ripper`` supports encoding to FLAC, AAC, 
     wget http://ftp.us.debian.org/debian/pool/non-free/f/fdk-aac/libfdk-aac-dev_0.1.4-2+b1_armhf.deb
     sudo dpkg -i libfdk-aac-dev_0.1.4-2+b1_armhf.deb
     
-    Note: If at any time there is an error about broken packages, just issue this command: sudo apt install --fix-broken
+    Note that if at any time there is an error about broken packages, just issue this command: sudo apt install --fix-broken
     
 
 Upgrade
