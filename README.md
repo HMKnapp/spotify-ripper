@@ -31,7 +31,7 @@ spotify-ripper spotify:album:3zuIMH8P0GKtV5LR6zwGLB
 
 > Note that as of May 2015 libspotify is officially deprecated by Spotify and is no longer actively maintained.
 
-> Note that as of Jan 2016 Spotify may no longer be issuing developer keys.
+> Also note that as of Jan 2016 Spotify may no longer be issuing developer keys.
 
 Spotify has published newer libraries intended for Android and iOS development, as well as web APIs to access track metadata and manage playlists. Though, for making apps with Spotify playback capabilities, on any other platform than Android and iOS, there is currently no alternative to libspotify.
 
