@@ -472,25 +472,19 @@ sudo dpkg -i libfdk-aac-dev_0.1.4-2+b1_armhf.deb
 
 Upgrade
 ---------------
-
 Use ```git pull``` to upgrade to the latest version.
-
 ```
 cd spotify-ripper
 git pull
 ```
-
 Common Issues and Problems
 ---------------
-
 Help for common problems while using spotify-ripper can be found in the [wiki](https://github.com/hbashton/spotify-ripper/wiki/Help).
 
 Release Notes
 ---------------
-
 Release notes can be found in the [wiki](https://github.com/hbashton/spotify-ripper/wiki/Release-Notes).
 
 License
 ---------------
-
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
