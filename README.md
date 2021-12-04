@@ -16,7 +16,7 @@ Track: ```https://open.spotify.com/track/3tQ6LmYZeoJ4dwkZ3IGoSj?si=9e7b8b1d2bd14
 <br>
 Album: ```https://open.spotify.com/album/3zuIMH8P0GKtV5LR6zwGLB?si=v_PvykSQTxOJXpLP3eIpEQ``` = ```spotify:album:3zuIMH8P0GKtV5LR6zwGLB```
 
-Take either of these URIs & add them like this:
+Take either of these URIs & use it like this:
 
 ```
 spotify-ripper spotify:track:3tQ6LmYZeoJ4dwkZ3IGoSj
