@@ -299,7 +299,7 @@ pyenv rehash
 
 Take the application key file ```spotify_appkey.key``` from this repo (requires a Spotify Premium Account) and move the file to the ```~/.spotify-ripper``` directory (or use the ```-k | --key``` option).
 
-### Ubuntu/Debian
+### Ubuntu / Debian
 
 > Note that as of Ubuntu 20.04, Python 2 has been removed and Python 3 is the default. You can use the pyenv method to install Python 2 on Ubuntu 20.04 and up, but if that does not work you can follow this [guide](https://www.vultr.com/docs/how-to-install-python-2-on-ubuntu-20-04).
 
@@ -413,7 +413,7 @@ brew install vorbis-tools
 brew install opus-tools
 ```
 
-#### Ubuntu/Debian
+#### Ubuntu / Debian
 
 > Note that if installing onto RetroPie, `libav-tools`, `faac`, and `libfdk-aac-dev` are not available through the official raspbian sources. These will have to be installed manually.
 
