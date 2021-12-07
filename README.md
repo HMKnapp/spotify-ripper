@@ -20,9 +20,9 @@ Album: ```https://open.spotify.com/album/3zuIMH8P0GKtV5LR6zwGLB?si=v_PvykSQTxOJX
 
 **From Mopidy's documentation**
 
-> Note that as of May 2015 libspotify is officially deprecated by Spotify and is no longer actively maintained.
+> As of May 2015 libspotify is officially deprecated by Spotify and is no longer actively maintained.
 
-> Also note that as of Jan 2016 Spotify may no longer be issuing developer keys.
+> Also, as of Jan 2016 Spotify may no longer be issuing developer keys.
 
 Spotify has published newer libraries intended for Android and iOS development, as well as web APIs to access track metadata and manage playlists. Though, for making apps with Spotify playback capabilities, on any other platform than Android and iOS, there is currently no alternative to libspotify.
 
@@ -52,9 +52,9 @@ Libspotify has been the main way of integrating with Spotify since 2009, and is 
 * option to replace output filenames
 * option to normalize output filenames to NFKD (see [Normalization](http://unicode.org/faq/normalization.html))
 
-> Note that ripping playlists require putting Spotify URIs into a `.txt` file and using the command `spotify-ripper name_of_file.txt`.
+> Ripping playlists require putting Spotify URIs into a `.txt` file and using the command `spotify-ripper name_of_file.txt`.
 
-> Also note that Spotify’s highest quality setting is 320 kbps, so the benefit of ripping to a lossless format is to not double encode the audio data. It’s not possible to rip in true lossless quality.
+> Spotify’s highest quality setting is 320 kbps, so the benefit of ripping to a lossless format is to not double encode the audio data. It’s not possible to rip in true lossless quality.
 
 ## Usage
 
@@ -259,7 +259,7 @@ If you want to redownload a playlist (for example with improved quality), you ei
 
 ### MacOS
 
-> Note that Spotify-Ripper works with macOS 11 Big Sur
+> Spotify Ripper works with macOS 11 Big Sur
 
 The recommended approach uses [homebrew](http://brew.sh/) and [pyenv](https://github.com/yyuu/pyenv).
 
@@ -296,17 +296,17 @@ git clone https://github.com/richardk80/spotify-ripper.git && cd spotify-ripper 
 pyenv rehash
 ```
 
-> Note that Spotify may no longer be issuing developer keys. See [Libspotify’s Deprecation](https://github.com/richardk80/spotify-ripper/blob/master/README.rst#libspotifys-deprecation)
+> Spotify may no longer be issuing developer keys. See [Libspotify’s Deprecation](https://github.com/richardk80/spotify-ripper/blob/master/README.md#libspotifys-deprecation)
 
 Take the application key file ```spotify_appkey.key``` from this repo (requires a Spotify Premium Account) and move the file to the ```~/.spotify-ripper``` directory (or use the ```-k | --key``` option).
 
 ### Ubuntu / Debian
 
-> Note that as of Ubuntu 20.04, Python 2 has been removed and Python 3 is the default. You can use the pyenv method to install Python 2 on Ubuntu 20.04 and up, but if that does not work you can follow this [guide](https://www.vultr.com/docs/how-to-install-python-2-on-ubuntu-20-04).
+> As of Ubuntu 20.04, Python 2 has been removed and Python 3 is the default. You can use the pyenv method to install Python 2 on Ubuntu 20.04 and up, but if that does not work you can follow this [guide](https://www.vultr.com/docs/how-to-install-python-2-on-ubuntu-20-04).
 
 The recommended approach uses [pyenv](https://github.com/yyuu/pyenv). If you don't use pyenv, you need to install the ```python-dev``` package also.
 
-> Note that to install spotify-ripper on Raspberry Pi 4, you need to be running Ubuntu 18.04.5 or 20.04.1 and you should choose "Raspberry Pi 3 (Hard-Float) preinstalled server image" if it is 18.04.5 or "Raspberry Pi Generic (Hard-Float) preinstalled server image" if it is 20.04.1 because the ARM64 version will not work at all.
+> To install spotify-ripper on Raspberry Pi 4, you need to be running Ubuntu 18.04.5 or 20.04.1 and you should choose "Raspberry Pi 3 (Hard-Float) preinstalled server image" if it is 18.04.5 or "Raspberry Pi Generic (Hard-Float) preinstalled server image" if it is 20.04.1 because the ARM64 version will not work at all.
 
 Here are links to the actual distros you can use: [18.04.5](https://cdimage.ubuntu.com/releases/18.04.5/release/ubuntu-18.04.5-preinstalled-server-armhf+raspi3.img.xz) / [20.04.1](https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.1-preinstalled-server-armhf+raspi.img.xz)
 
@@ -333,7 +333,7 @@ exit
 
 Now you will need to add the config.ini and spotify_appkey.key files to the .spotify-ripper folder just like you normally would and then edit the config.ini file to fit your needs.
 
-> Note that this has only been tested with a Raspberry Pi 4, so as with any other version of Raspberry Pi, your mileage may vary.
+> This has only been tested with a Raspberry Pi 4, so as with any other version of Raspberry Pi, your mileage may vary.
 
 To install pyenv using [pyenv-installer](https://github.com/yyuu/pyenv-installer) (requires git and curl):
 
@@ -357,7 +357,7 @@ git clone https://github.com/richardk80/spotify-ripper.git && cd spotify-ripper 
 pyenv rehash
 ```
 
-> Note that Spotify may no longer be issuing developer keys. See [Libspotify’s Deprecation](https://github.com/richardk80/spotify-ripper/blob/master/README.rst#libspotifys-deprecation)
+> Spotify may no longer be issuing developer keys. See [Libspotify’s Deprecation](https://github.com/richardk80/spotify-ripper/blob/master/README.md#libspotifys-deprecation)
 
 Take the application key file ```spotify_appkey.key``` from this repo (requires a Spotify Premium Account) and move the file to the ```~/.spotify-ripper``` directory (or use the ```-k | --key``` option).
 
@@ -367,7 +367,7 @@ Unfortunately, pyspotify seems to have an issue building on Windows (if someone 
 
 There's a few extra steps when using WSL:
 
-> Note that these steps should also be used after installing on both Ubuntu/Debian or MacOS.
+> These steps should also be used after installing on both Ubuntu/Debian or MacOS.
 
 1. After installation of ```spotify-ripper``` is complete, change the read/write permissions for the ```.spotify-ripper``` folder with:
 
@@ -391,8 +391,8 @@ In addition to MP3 encoding, ```spotify-ripper``` supports encoding to FLAC, AAC
 
 #### MacOS
 
-> Note that if you are using Big Sur, there will be an issue with libx264.
-Install libav in Big Sur use: `brew install libav --build-from-source`
+> If you are using Big Sur, there will be an issue with libx264.
+To install libav in Big Sur use: `brew install libav --build-from-source`
 
 ```
 # FLAC
@@ -416,7 +416,7 @@ brew install opus-tools
 
 #### Ubuntu / Debian
 
-> Note that if installing onto RetroPie, `libav-tools`, `faac`, and `libfdk-aac-dev` are not available through the official raspbian sources. These will have to be installed manually.
+> If installing onto RetroPie, `libav-tools`, `faac`, and `libfdk-aac-dev` are not available through the official raspbian sources. These will have to be installed manually.
 
 ```
 # FLAC
@@ -460,7 +460,7 @@ wget http://ftp.us.debian.org/debian/pool/non-free/f/fdk-aac/libfdk-aac-dev_0.1.
 sudo dpkg -i libfdk-aac-dev_0.1.4-2+b1_armhf.deb
 ```
 
-> Note that if at any time there is an error about broken packages, just issue this command: `sudo apt install --fix-broken`.
+> If at any time there is an error about broken packages, just issue this command: `sudo apt install --fix-broken`.
 
 ## Upgrade
 
