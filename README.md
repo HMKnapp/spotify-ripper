@@ -30,27 +30,27 @@ Libspotify has been the main way of integrating with Spotify since 2009, and is 
 
 ## Features
 
-* real-time VBR or CBR ripping from Spotify PCM stream
-* writes ID3v2/metadata tags (including album covers)
-* rips files into the following directory structure: artist/album/artist - song.mp3 by default or optionally into a user-specified structure (see Format String section below)
-* option to skip or overwrite existing files
-* accepts tracks, playlists, albums, and artist URIs
-* search for tracks using Spotify queries
-* options for interactive login (no password in shell history) and to relogin using previous credentials
-* option to remove tracks from playlist after successful ripping
-* globally installs ripper script using setup.py
+* Real-time VBR or CBR ripping from Spotify PCM stream
+* Writes ID3v2/metadata tags (including album covers)
+* Rips files into the following directory structure: artist/album/artist - song.mp3 by default or optionally into a user-specified structure (see Format String section below)
+* Option to skip or overwrite existing files
+* Accepts tracks, playlists, albums, and artist URIs
+* Search for tracks using Spotify queries
+* Options for interactive login (no password in shell history) and to relogin using previous credentials
+* Option to remove tracks from playlist after successful ripping
+* Globally installs ripper script using setup.py
 * Python 2.7.x and 3.4.x compatible. Python 3 will occasionally throw a NameError: name '_lock' is not defined exception at the end of the script due to an upstream bug in pyspotify.
-* use a config file to specify common command-line options
-* helpful progress bar to gauge the time remaining until completion
-* keep local files in sync with a Spotify playlist, m3u and wpl playlist file
-* option to rip to ALAC, a loseless codec, instead of MP3 (requires extra avconv dependency)
-* option to rip to FLAC, a loseless codec, instead of MP3 (requires extra flac dependency)
-* option to rip to Ogg Vorbis instead of MP3 (requires extra vorbis-tools dependency)
-* option to rip to Opus instead of MP3 (requires extra opus-tools dependency)
-* option to rip to AAC instead of MP3 (requires extra faac dependency)
-* option to rip to MP4/M4A instead of MP3 (requires compiling fdkaac)
-* option to replace output filenames
-* option to normalize output filenames to NFKD (see [Normalization](http://unicode.org/faq/normalization.html))
+* Use a config file to specify common command-line options
+* Helpful progress bar to gauge the time remaining until completion
+* Keep local files in sync with a Spotify playlist, m3u and wpl playlist file
+* Option to rip to ALAC, a loseless codec, instead of MP3 (requires extra avconv dependency)
+* Option to rip to FLAC, a loseless codec, instead of MP3 (requires extra flac dependency)
+* Option to rip to Ogg Vorbis instead of MP3 (requires extra vorbis-tools dependency)
+* Option to rip to Opus instead of MP3 (requires extra opus-tools dependency)
+* Option to rip to AAC instead of MP3 (requires extra faac dependency)
+* Option to rip to MP4/M4A instead of MP3 (requires compiling fdkaac)
+* Option to replace output filenames
+* Option to normalize output filenames to NFKD (see [Normalization](http://unicode.org/faq/normalization.html))
 
 > Ripping playlists require putting Spotify URIs into a `.txt` file and using the command `spotify-ripper name_of_file.txt`.
 
