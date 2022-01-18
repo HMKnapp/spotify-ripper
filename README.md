@@ -287,10 +287,12 @@ sudo mkdir -p /usr/local/opt/libspotify/lib
 sudo ln -s /Library/Frameworks/libspotify.framework/libspotify /usr/local/opt/libspotify/lib
 brew install lame
 Pyspotify will have to be installed using pip before you can run the command below
-First make sure pip is up to date
-sudo easy_install pip (in case you don't have pip installed)
-pip install pip --upgrade
-pip install pyspotify
+You will need pip for Python 2 since pip for Python 3 doesn't know how to install pyspotify.
+To install pip for Python 2, just do this:
+Type in 'curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py'
+Then, type in 'sudo python get-pip.py' (Enter your password if instructed to)
+See if pip installed by typing in 'pip'
+Next, type in 'sudo pip install pyspotify' (Enter your password if instructed to)
 Everything else should be installed properly using the command below
 git clone https://github.com/richardk80/spotify-ripper.git && cd spotify-ripper && sudo python setup.py install
 pyenv rehash
