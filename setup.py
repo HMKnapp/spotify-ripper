@@ -35,7 +35,7 @@ setup(
 
     # Additional data
     package_data={
-        '': ['README.rst', 'LICENCE']
+        '': ['README.md', 'LICENCE']
     },
 
     # Requirements
