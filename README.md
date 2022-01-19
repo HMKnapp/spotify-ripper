@@ -308,9 +308,19 @@ Take the application key file ```spotify_appkey.key``` from this repo (requires 
 
 The recommended approach uses [pyenv](https://github.com/yyuu/pyenv). If you don't use pyenv, you need to install the ```python-dev``` package also.
 
-> To install spotify-ripper on Raspberry Pi 4, you need to be running Ubuntu 18.04.5 or 20.04.1 and you should choose "Raspberry Pi 3 (Hard-Float) preinstalled server image" if it is 18.04.5 or "Raspberry Pi Generic (Hard-Float) preinstalled server image" if it is 20.04.1 because the ARM64 version will not work at all.
+>Follow these steps to install pip for Python 2.
 
-Here are links to the actual distros you can use: [18.04.5](https://cdimage.ubuntu.com/releases/18.04.5/release/ubuntu-18.04.5-preinstalled-server-armhf+raspi3.img.xz) / [20.04.1](https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.1-preinstalled-server-armhf+raspi.img.xz)
+1. Type in `wget https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py`
+
+3. Type in `sudo python get-pip.py` or `sudo python2 get-pip.py` (Enter your password if instructed to)
+
+5. See if pip is installed by typing in `pip`
+
+7. Type in `sudo pip install pyspotify` (Enter your password if instructed to)
+
+> To install spotify-ripper on Raspberry Pi 4, you need to be running Ubuntu 18.04.6 to 21.10 and it should be the ARMHF version because the ARM64 version will not work at all.
+
+Here are links to the actual distros you can use: [18.04.6](https://cdimage.ubuntu.com/releases/18.04.6/release/ubuntu-18.04.5-preinstalled-server-armhf+raspi4.img.xz) | [20.04.3](https://cdimage.ubuntu.com/releases/20.04.3/release/ubuntu-20.04.3-preinstalled-server-armhf+raspi.img.xz) | [21.04](https://cdimage.ubuntu.com/releases/21.04/release/ubuntu-21.04-preinstalled-server-armhf+raspi.img.xz) | [21.10](https://cdimage.ubuntu.com/releases/21.10/release/ubuntu-21.10-preinstalled-server-armhf+raspi.img.xz)
 
 ```
 sudo apt-get install lame build-essential libffi-dev git python-dev python-setuptools
