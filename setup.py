@@ -40,11 +40,11 @@ setup(
 
     # Requirements
     install_requires=[
-        'pyspotify>=2.1.3',
+        'pyspotify==2.1.3',
         'colorama==0.3.3',
         'mutagen==1.30',
         'requests==2.24.0',
-        'schedule>=0.6.0',
+        'schedule==0.6.0',
     ],
 
     # Metadata
