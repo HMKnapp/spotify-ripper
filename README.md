@@ -408,8 +408,7 @@ In addition to MP3 encoding, ```spotify-ripper``` supports encoding to FLAC, AAC
 brew install flac
 
 # ALAC
-If you are planning to use ALAC with MacOS, there will be an issue with libx264.
-To install libav in MacOS use: `brew install libav --build-from-source`
+brew install libav --build-from-source
 
 # AAC
 brew install faac
