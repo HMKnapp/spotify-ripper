@@ -403,15 +403,13 @@ In addition to MP3 encoding, ```spotify-ripper``` supports encoding to FLAC, AAC
 
 #### MacOS
 
-> If you are using Big Sur, there will be an issue with libx264.
-To install libav in Big Sur use: `brew install libav --build-from-source`
-
 ```
 # FLAC
 brew install flac
 
 # ALAC
-brew install libav
+If you are planning to use ALAC with MacOS, there will be an issue with libx264.
+To install libav in MacOS use: `brew install libav --build-from-source`
 
 # AAC
 brew install faac
