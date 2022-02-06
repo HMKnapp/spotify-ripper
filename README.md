@@ -310,7 +310,7 @@ The recommended approach uses [pyenv](https://github.com/yyuu/pyenv). If you don
 
 >Follow these steps to install pip for Python 2.
 
-1. Type in `wget https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py`
+1. Type in `curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py`
 
 3. Type in `sudo python get-pip.py` or `sudo python2 get-pip.py` (Enter your password if instructed to)
 
