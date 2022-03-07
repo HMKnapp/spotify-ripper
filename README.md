@@ -6,6 +6,8 @@ Spotify Ripper is a small ripper script for Spotify that rips Spotify
 URIs to audio files and includes ID3 tags and cover art.
 By default spotify-ripper will encode to MP3 files, but includes the ability to rip to WAV, FLAC, Ogg Vorbis, Opus, AAC, and MP4/M4A.
 
+> Spotify Ripper is not affliated with Spotify in any way
+
 > Stream ripping violates the libspotify's ToS
 
 > Spotify recently changed how their desktop app works. It no longer shows a URI for albums or tracks, but instead it shows album / track url links. Spotify Ripper will still work but it takes some different steps.
