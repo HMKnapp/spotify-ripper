@@ -539,6 +539,7 @@ def main(prog_args=sys.argv[1:]):
             args.uri = [list(ripper.search_query(args.uri[0]))]
 
     # login and uri_parse on main thread to catch any KeyboardInterrupt
+    args.uri = [re.sub('https://open\.spotify\.com/([\w]+)/([\w]+).*', r'spotify:\1:\2', i) for i in args.uri]
     try:
         if not ripper.login():
             print(
@@ -560,7 +561,7 @@ def main(prog_args=sys.argv[1:]):
     try:
         tty.setcbreak(sys.stdin.fileno())
 
-        while ripper.isAlive():
+        while ripper.is_alive():
             schedule.run_pending()
 
             # check if the escape button was pressed

@@ -1,6 +1,13 @@
 <img src="sr-logo-2.svg" alt="Spotify Ripper Logo" />
 
-A fork of [spotify-ripper](https://github.com/hbashton/spotify-ripper) that uses [pyspotify](https://github.com/mopidy/pyspotify) v2.1.3
+A fork of [richardk80](https://github.com/richardk80/spotify-ripper)'s spotify-ripper which is a fork of [spotify-ripper](https://github.com/hbashton/spotify-ripper) that uses [pyspotify](https://github.com/mopidy/pyspotify) v2.1.3
+
+## Changes
+- just made it work
+
+## Installation
+One line: `git clone https://github.com/HMKnapp/spotify-ripper.git && cd spotify-ripper && sudo python setup.py install`
+You _may_ need to remove python modules pyspotify, colorama, mutagen, requests, schedule beforehand
 
 Spotify Ripper is a small ripper script for Spotify that rips Spotify
 URIs to audio files and includes ID3 tags and cover art.
@@ -8,27 +15,6 @@ By default spotify-ripper will encode to MP3 files, but includes the ability to 
 
 > Spotify Ripper is not affliated with Spotify in any way
 
-> Stream ripping violates the libspotify's ToS
-
-> Spotify recently changed how their desktop app works. It no longer shows a URI for albums or tracks, but instead it shows album / track url links. Spotify Ripper will still work but it takes some different steps.
-
-How to convert album / track url links to URI:
-
-Track: ```https://open.spotify.com/track/3tQ6LmYZeoJ4dwkZ3IGoSj?si=9e7b8b1d2bd1481f``` = ```spotify:track:3tQ6LmYZeoJ4dwkZ3IGoSj```
-<br>
-Album: ```https://open.spotify.com/album/3zuIMH8P0GKtV5LR6zwGLB?si=v_PvykSQTxOJXpLP3eIpEQ``` = ```spotify:album:3zuIMH8P0GKtV5LR6zwGLB```
-
-## Libspotify’s Deprecation
-
-**From Mopidy's documentation**
-
-> As of May 2015 libspotify is officially deprecated by Spotify and is no longer actively maintained.
-
-> Also, as of Jan 2016, Spotify may no longer be issuing developer keys.
-
-Spotify has published newer libraries intended for Android and iOS development, as well as web APIs to access track metadata and manage playlists. Though, for making apps with Spotify playback capabilities, on any other platform than Android and iOS, there is currently no alternative to libspotify.
-
-Libspotify has been the main way of integrating with Spotify since 2009, and is today a part of numerous open source projects and commercial applications, including many receivers and even cars. There’s no guarantees, but one can hope that the large deployment of libspotify means that the library will continue to work with the Spotify service for a long time into the future.
 
 ## Features
 
@@ -60,6 +46,12 @@ Libspotify has been the main way of integrating with Spotify since 2009, and is 
 
 ## Usage
 
+Get link from Spotify: Share - Copy Song Link
+
+### Example
+`spotify-ripper -u user https://open.spotify.com/track/7FEHQTZh3XliGpSuImVK8D?si=33076130e9ad4889`
+
+### Command-Line Options
 ```spotify-ripper``` takes many command-line options
 
 ```
@@ -166,11 +158,10 @@ optional arguments:
                         Delete tracks from playlist after successful ripping [Default=no]
 
 Example usage:
-    rip a single file: spotify-ripper -u user spotify:track:52xaypL0Kjzk0ngwv3oBPR
+    rip a single file: spotify-ripper -u user https://open.spotify.com/track/7FEHQTZh3XliGpSuImVK8D?si=33076130e9ad4889
     rip entire playlist: spotify-ripper -u user spotify:user:username:playlist:4vkGNcsS8lRXj4q945NIA4
     rip a list of URIs: spotify-ripper -u user list_of_uris.txt
     rip tracks from Spotify's charts: spotify-ripper -l spotify:charts:regional:global:weekly:latest
-    search for tracks to rip: spotify-ripper -l -Q 160 -o "album:Rumours track:'the chain'"
 ```   
 
 ## Facebook Login
